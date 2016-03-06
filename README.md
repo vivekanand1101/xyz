@@ -1,2 +1,1 @@
-# xyz
-My future website: vivekanand.xyz
+For my personal website
