@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Vivek Anand</title>
+	<meta name="author" content="kurious7" />
+	<meta name="description" content="Vivek Anand: Python programmer and Open Source Enthusiast" />
+	<meta name="keywords"  content="Vivek Anand: Python programmer and Open Source Enthusiast" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="http://sercappelle.be/css/jquery.fullPage.css" />
+	<link href="http://sercappelle.be/css/black-tie.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://sercappelle.be/css/bootstrap.min.css" />
+	<link href="http://sercappelle.be/css/bootstrap-custom.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://sercappelle.be/css/ser.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://sercappelle.be/js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="http://sercappelle.be/js/jquery.fullPage.min.js"></script>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['start', 'about', 'work', 'touch'],
+				recordHistory: true,
+                scrollingSpeed: 1000,
+				slidesNavigation: true,
+				loopHorizontal: false,
+				afterLoad: function (anchorLink, index) {
+					//section 2 loaded
+					if (index == 2) {
+						//adding active class to the 1st element in the slide menu
+						$('#menu').find('li').eq(0).addClass('active');
+						$('#menu').find('li').eq(1).removeClass('active');
+						$('#menu').find('li').eq(2).removeClass('active');
+					}
+					if (index == 3) {
+						//adding active class to the 1st element in the slide menu
+						$('#menu').find('li').eq(1).addClass('active');
+						$('#menu').find('li').eq(0).removeClass('active');
+						$('#menu').find('li').eq(2).removeClass('active');
+					}
+					if (index == 4) {
+						//adding active class to the 1st element in the slide menu
+						$('#menu').find('li').eq(2).addClass('active');
+						$('#menu').find('li').eq(1).removeClass('active');
+						$('#menu').find('li').eq(0).removeClass('active');
+					}
+				}
+			});
+		});
+
+
+	</script>
+</head>
+<body>
+
+<div class="borders"></div>
+<div id="particles-js"></div>
+
+<div class="header">
+  <a href="index.html#start" class="logo"><img src="http://sercappelle.be/assets/logo.png" alt=""></a>
+  <div id="toggle">
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="three"></div>
+  </div>
+  <div id="menu">
+	<ul>
+	  <li><a href="index.html#about">About me</a></li>
+	  <li><a href="index.html#work">Selected Work</a></li>
+	  <li><a href="index.html#touch">Get In Touch</a></li>
+	</ul>
+  </div>
+</div>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="content">
+		  <div class="content-inner">
+			<div class="quote">
+			  <div class="title">Vivek Anand</div>
+			  Python programmer & Open Source enthusiast
+              <div class="sub"><span> Based in India </span></div>
+			</div>
+			<div data-menuanchor="about" class="more"><a href="index.html#about" class="btr bt-arrow-down"></a></div>
+		  </div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="content">
+		  <div class="content-inner">
+			  <div class="text">
+                  Hello, my name is Vivek Anand and currently based in Allahabad, India. I'm an <span>undergraduate</span> student from <span>IIIT Allahabad</span>. My favorite language is <span>Python</span> and i have been working on it for about <span>2 years now</span>. I am an open source enthusiast and currently i am <span>contributing to fedora</span>. I have experience in both <span>Flask and Django</span>, have worked with <span>Sqlalchemy, Redis</span>. I have also done fair amount of web scraping using <span>Scrapy</span>. Like every indian, i love playing, watching, discussing ... or basically anything related to <span>Cricket</span>.
+			  </div>
+		  </div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide active">
+		  <div class="content work">
+			<div class="content-inner">
+				<div class="project-wrap">
+				  <div class="project" style="background: url(http://sercappelle.be/assets/work/facebook.png) left top; background-size: cover; ">
+					<div class="project-content">
+						<span>facebook</span>
+						<div class="title">redesign - just for fun</div>
+						<a href="https://www.behance.net/gallery/23597009/Facebook-Concept-Redesign" onclick="this.target='_blank'" class="btn-ser">view</a>
+					</div>
+				  </div>
+				</div>
+			</div>
+		  </div>
+        </div>
+		<div class="slide">
+		  <div class="content work">
+			<div class="content-inner">
+				<div class="project-wrap">
+				  <div class="project" style="background: url(http://sercappelle.be/assets/work/ulinq.png) left top; background-size: cover; ">
+					<div class="project-content">
+						<span>ulinq</span>
+						<div class="title">Lead Product Designer/Front End Developer</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		  </div>
+        </div>
+		<div class="slide">
+		  <div class="content work">
+			<div class="content-inner">
+				<div class="project-wrap">
+				  <div class="project" style="background: url(http://sercappelle.be/assets/work/klublr.png) left top; background-size: cover; ">
+					<div class="project-content">
+						<span>klublr</span>
+						<div class="title">founder</div>
+						<a href="https://www.klublr.be/" onclick="this.target='_blank'" class="btn-ser">view</a>
+					</div>
+				  </div>
+				</div>
+			</div>
+		  </div>
+        </div>
+		<div class="slide">
+		  <div class="content work">
+			<div class="content-inner">
+				<div class="project-wrap">
+				  <div class="project" style="background: url(http://sercappelle.be/assets/work/fitness.png) left top; background-size: cover; ">
+					<div class="project-content">
+						<span>Fitness App</span>
+						<div class="title">Contest Entry</div>
+						<a href="https://www.behance.net/gallery/26782609/Fitness-App-UI" onclick="this.target='_blank'" class="btn-ser">view</a>
+					</div>
+				  </div>
+				</div>
+			</div>
+		  </div>
+        </div>
+		<div class="slide">
+		  <div class="content work">
+			<div class="content-inner">
+				<div class="project-wrap">
+				  <div class="project" style="background: url(http://sercappelle.be/assets/work/school.png) left top; background-size: cover; ">
+					<div class="project-content">
+						<span>Schoolneuron</span>
+						<div class="title">Freelance work</div>
+						<a href="https://www.behance.net/gallery/25040025/Concept-Social-Learning-Platform" onclick="this.target='_blank'" class="btn-ser">view</a>
+					</div>
+				  </div>
+				</div>
+			</div>
+		  </div>
+        </div>
+	</div>
+	<div class="section" id="section1">
+		<div class="content">
+		  <div class="content-inner">
+			  <blockquote>Success is dependent upon what you do today, not tomorrow.</blockquote>
+			  <div class="text border">
+				If you want to collaborate on any amazing stuff or you just like to say hello and have a coffee/beer, feel free to get in touch with me!
+				<div class="social">
+				  <div><a href="https://www.facebook.com/viveklikesthis" onclick="this.target='_blank'">Facebook</a></div>
+                  <div><a href="https://www.twitter.com/vivekanand1101" onclick="this.target='_blank'">Twitter</a></div>
+				  <div><a href="https://www.linkedin.com/in/vivek-anand-b3008083" onclick="this.target='_blank'">Linkedin</a></div>
+				  <div><a href="mailto:vivekanand1101@gmail.com">mail</a></div>
+                  <div><a href="https://www.github.com/vivekanand1101" onclick="this.target='_blank'">Github</a></div>
+				</div>
+			  </div>
+		  </div>
+		</div>
+	</div>
+
+</div>
+
+<!-- Modal -->
+	<script src="http://sercappelle.be/js/particles.min.js"></script>
+	<script src="http://sercappelle.be/js/app.js"></script>
+	<script type="text/javascript" src="http://sercappelle.be/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://sercappelle.be/js/ser.js"></script>
+
+</body>
+</html>
