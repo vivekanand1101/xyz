@@ -10,15 +10,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" href="http://sercappelle.be/css/jquery.fullPage.css" />
-	<link href="http://sercappelle.be/css/black-tie.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="http://sercappelle.be/css/bootstrap.min.css" />
-	<link href="http://sercappelle.be/css/bootstrap-custom.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="http://sercappelle.be/css/ser.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }} static/css/jquery.fullPage.css" />
+    <link href="{{ STATIC_URL }} static/css/black-tie.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ STATIC_URL }} static/css/bootstrap.min.css" />
+    <link href="{{ STATIC_URL }} static/css/bootstrap-custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }} static/css/ser.css" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="http://sercappelle.be/js/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="http://sercappelle.be/js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }} static/js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }} static/js/jquery.fullPage.min.js"></script>
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -67,7 +67,7 @@
 <div id="particles-js"></div>
 
 <div class="header">
-  <a href="index.html#start" class="logo"><img src="http://sercappelle.be/assets/logo.png" alt=""></a>
+  <a href="index.html#start" class="logo"><img src="{{ STATIC_URL }} static/images/logo.png" alt=""></a>
   <div id="toggle">
 	<div class="one"></div>
 	<div class="two"></div>
@@ -109,7 +109,7 @@
 		  <div class="content work">
 			<div class="content-inner">
 				<div class="project-wrap">
-                    <div class="project" style="background: url('{{ STATIC_URL }}static/scrapy.png') left top; background-size: cover; ">
+                    <div class="project" style="background: url('{{ STATIC_URL }}static/images/scrapy.png') left top; background-size: cover; ">
 					<div class="project-content">
 						<span>opinator</span>
 						<div class="title">Scrape reviews, provide sentiment and summary</div>
@@ -124,7 +124,7 @@
 		  <div class="content work">
 			<div class="content-inner">
 				<div class="project-wrap">
-                    <div class="project" style="background: url('{{ STATIC_URL }}static/django.png') left top; background-size: cover; ">
+                    <div class="project" style="background: url('{{ STATIC_URL }}static/images/django.png') left top; background-size: cover; ">
 					<div class="project-content">
 						<span>studybasin</span>
 						<div class="title">Django based Quiz web app</div>
@@ -139,7 +139,7 @@
 		  <div class="content work">
 			<div class="content-inner">
 				<div class="project-wrap">
-                    <div class="project" style="background: url('{{ STATIC_URL }}static/flask.png') left top; background-size: cover; ">
+                    <div class="project" style="background: url('{{ STATIC_URL }}static/images/flask.png') left top; background-size: cover; ">
 					<div class="project-content">
 						<span>anitya</span>
 						<div class="title">Contributor, flask based website</div>
@@ -154,7 +154,7 @@
 		  <div class="content work">
 			<div class="content-inner">
 				<div class="project-wrap">
-                    <div class="project" style="background: url('{{ STATIC_URL }}static/pagure-logo.png') left top; background-size: cover; ">
+                    <div class="project" style="background: url('{{ STATIC_URL }}static/images/pagure-logo.png') left top; background-size: cover; ">
 					<div class="project-content">
 						<span>pagure</span>
 						<div class="title">Contributor, Flask based, git repo hosting platform</div>
@@ -169,7 +169,7 @@
 		  <div class="content work">
 			<div class="content-inner">
 				<div class="project-wrap">
-                    <div class="project" style="background: url('{{ STATIC_URL }}static/desktop-notification.jpg') left top; background-size: cover; ">
+                    <div class="project" style="background: url('{{ STATIC_URL }}static/images/desktop-notification.jpg') left top; background-size: cover; ">
 					<div class="project-content">
 						<span>so-desktop-notification</span>
 						<div class="title">Stackoverflow newest question on desktop</div>
@@ -184,7 +184,7 @@
 	<div class="section" id="section1">
 		<div class="content">
 		  <div class="content-inner">
-			  <blockquote>Success is dependent upon what you do today, not tomorrow.</blockquote>
+			  <blockquote>Perfection is not attainable, but if we chase perfection we will catch excellence.</blockquote>
 			  <div class="text border">
 				If you want to collaborate on any amazing stuff or you just like to say hello and have a coffee/beer, feel free to get in touch with me!
 				<div class="social">
@@ -202,10 +202,10 @@
 </div>
 
 <!-- Modal -->
-	<script src="http://sercappelle.be/js/particles.min.js"></script>
-	<script src="http://sercappelle.be/js/app.js"></script>
-	<script type="text/javascript" src="http://sercappelle.be/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://sercappelle.be/js/ser.js"></script>
+    <script src="{{ STATIC_URL }} static/js/particles.min.js"></script>
+    <script src="{{ STATIC_URL }} static/js/app.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }} static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }} static/js/ser.js"></script>
 
 </body>
 </html>
