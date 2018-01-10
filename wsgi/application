@@ -1,6 +1,0 @@
-#!/usr/bin/python
-
-import xyz.wsgi
-
-# reuse the application callable from openshift.wsgi
-application = xyz.wsgi.application
