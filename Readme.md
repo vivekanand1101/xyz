@@ -1,3 +1,1 @@
-For my personal website
-
-Thanks Ser Cappelle for the design.
+I am Batman and this is Batcave.
