@@ -1,5 +1,9 @@
+html {
+    height: 100%;
+}
+
 body {
-    font-style: italic;
+    font-family: sans-serif;
     background-color: #FFFFFF;
     font-size: 16px;
     line-height: 1.8;
@@ -7,7 +11,6 @@ body {
     padding-bottom: 96px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url("../images/background.jpg");
     background-position: center;
-    position: relative;
 }
 
 @media screen and (min-width: 405) {
@@ -64,14 +67,11 @@ dl {
 }
 
 footer {
-    background-color: #000000;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    padding: 20px 0 0 0;
     width: 100%;
 }
 
 .footer-link {
     color: #FFFFFF;
 }
+
