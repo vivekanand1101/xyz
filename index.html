@@ -1,213 +1,46 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
 	<title>Vivek Anand</title>
-	<meta name="author" content="kurious7" />
+	<meta name="author" content="Vivek Anand" />
 	<meta name="description" content="Vivek Anand: Python programmer and Open Source Enthusiast" />
 	<meta name="keywords"  content="Vivek Anand: Python programmer and Open Source Enthusiast" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" type="text/css" href="static/css/jquery.fullPage.css" />
-    <link href="static/css/black-tie.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
-    <link rel="icon" href="static/images/favicon.io" />
-    <link href="static/css/bootstrap-custom.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="static/css/ser.css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript"src="static/js/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript"src="static/js/jquery.fullPage.min.js"></script>
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['start', 'about', 'work', 'touch'],
-				recordHistory: true,
-                scrollingSpeed: 1000,
-				slidesNavigation: true,
-				loopHorizontal: false,
-				afterLoad: function (anchorLink, index) {
-					//section 2 loaded
-					if (index == 2) {
-						//adding active class to the 1st element in the slide menu
-						$('#menu').find('li').eq(0).addClass('active');
-						$('#menu').find('li').eq(1).removeClass('active');
-						$('#menu').find('li').eq(2).removeClass('active');
-					}
-					if (index == 3) {
-						//adding active class to the 1st element in the slide menu
-						$('#menu').find('li').eq(1).addClass('active');
-						$('#menu').find('li').eq(0).removeClass('active');
-						$('#menu').find('li').eq(2).removeClass('active');
-					}
-					if (index == 4) {
-						//adding active class to the 1st element in the slide menu
-						$('#menu').find('li').eq(2).addClass('active');
-						$('#menu').find('li').eq(1).removeClass('active');
-						$('#menu').find('li').eq(0).removeClass('active');
-					}
-				}
-			});
-		});
-
-
-	</script>
+  <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+  <link rel="icon" href="static/images/favicon.io" />
 </head>
 <body>
-
-<div class="borders"></div>
-<div id="particles-js"></div>
-
-<div class="header">
-  <a href="index.html#start" class="logo"><img src="static/images/logo.jpg" alt=""></a>
-  <div id="toggle">
-	<div class="one"></div>
-	<div class="two"></div>
-	<div class="three"></div>
-  </div>
-  <div id="menu">
-	<ul>
-	  <li><a href="index.html#about">About me</a></li>
-	  <li><a href="index.html#work">Selected Work</a></li>
-	  <li><a href="index.html#touch">Get In Touch</a></li>
-	</ul>
-  </div>
-</div>
-
-<div id="fullpage">
-	<div class="section" id="section0">
-		<div class="content">
-		  <div class="content-inner">
-			<div class="quote">
-			  <div class="title">Vivek Anand</div>
-			  Python programmer & Open Source enthusiast
-              <div class="sub"><span> Based in India </span></div>
-			</div>
-			<div data-menuanchor="about" class="more"><a href="index.html#about" class="btr bt-arrow-down"></a></div>
-		  </div>
-		</div>
-	</div>
-	<div class="section" id="section1">
-		<div class="content">
-		  <div class="content-inner">
-			  <div class="text">
-                  Hello, my name is Vivek Anand and currently based in Allahabad, India. I'm an <span>undergraduate</span> student from <span>IIIT Allahabad</span>. My favorite language is <span>Python</span> and i have been working on it for about <span>2 years now</span>. I am an open source enthusiast and currently i am <span>contributing to fedora</span>. I have experience in both <span>Flask and Django</span>, have worked with <span>Sqlalchemy, Redis</span>. I have also done fair amount of web scraping using <span>Scrapy</span>. Like every indian, i love playing, watching, discussing ... or basically anything related to <span>Cricket</span>.
-			  </div>
-		  </div>
-		</div>
-	</div>
-	<div class="section" id="section1">
-		<div class="slide active">
-		  <div class="content work">
-			<div class="content-inner">
-				<div class="project-wrap">
-                    <div class="project"style="background: url('static/images/scrapy.jpg') left top; background-size: 100% 100%; ">
-					<div class="project-content">
-						<span>opinator</span>
-						<div class="title">Scrape reviews, provide sentiment and summary</div>
-						<a href="https://github.com/SaptakS/opinator" onclick="this.target='_blank'" class="btn-ser">view</a>
-					</div>
-				  </div>
-				</div>
-			</div>
-		  </div>
-        </div>
-		<div class="slide">
-		  <div class="content work">
-			<div class="content-inner">
-				<div class="project-wrap">
-                    <div class="project"style="background: url('static/images/django.png') left top; background-size: 100% 100%; ">
-					<div class="project-content">
-						<span>studybasin</span>
-						<div class="title">Django based Quiz web app</div>
-                        <a href="https://github.com/SaptakS/DjangoTut-WebClient" onclick="this.target"='_blank' class="btn-ser">view</a>
-					</div>
-				  </div>
-				</div>
-			</div>
-		  </div>
-        </div>
-		<div class="slide">
-		  <div class="content work">
-			<div class="content-inner">
-				<div class="project-wrap">
-                    <div class="project"style="background: url('static/images/flask.png') left top; background-size: 100% 100%; ">
-					<div class="project-content">
-						<span>anitya</span>
-						<div class="title">Contributor, flask based website</div>
-						<a href="https://release-monitoring.org/" onclick="this.target='_blank'" class="btn-ser">view</a>
-					</div>
-				  </div>
-				</div>
-			</div>
-		  </div>
-        </div>
-		<div class="slide">
-		  <div class="content work">
-			<div class="content-inner">
-				<div class="project-wrap">
-                    <div class="project"style="background: url('static/images/pagure-logo.png') left top; background-size: 100% 100%; ">
-					<div class="project-content">
-						<span>pagure</span>
-						<div class="title">Contributor, Flask based, git repo hosting platform</div>
-						<a href="https://pagure.io/" onclick="this.target='_blank'" class="btn-ser">view</a>
-					</div>
-				  </div>
-				</div>
-			</div>
-		  </div>
-        </div>
-		<div class="slide">
-		  <div class="content work">
-			<div class="content-inner">
-				<div class="project-wrap">
-                    <div class="project"style="background: url('static/images/desktop-notification.png') left top; background-size: 100% 100%; ">
-					<div class="project-content">
-						<span>so-desktop-notification</span>
-						<div class="title">Stackoverflow newest question on desktop</div>
-						<a href="https://github.com/vivekanand1101/so-desktop-notification" onclick="this.target='_blank'" class="btn-ser">view</a>
-					</div>
-				  </div>
-				</div>
-			</div>
-		  </div>
-        </div>
-	</div>
-	<div class="section" id="section1">
-		<div class="content">
-		  <div class="content-inner">
-			  <blockquote>Perfection is not attainable, but if we chase perfection we will catch excellence.</blockquote>
-			  <div class="text border">
-				If you want to collaborate on any amazing stuff or you just like to say hello and have a coffee/beer, feel free to get in touch with me!
-				<div class="social">
-				  <div><a href="https://www.facebook.com/viveklikesthis" onclick="this.target='_blank'">Facebook</a></div>
-                  <div><a href="https://www.twitter.com/vivekanand1101" onclick="this.target='_blank'">Twitter</a></div>
-				  <div><a href="https://www.linkedin.com/in/vivekanand1101" onclick="this.target='_blank'">Linkedin</a></div>
-				  <div><a href="mailto:vivekanand1101@gmail.com">mail</a></div>
-                  <div><a href="https://www.github.com/vivekanand1101" onclick="this.target='_blank'">Github</a></div>
-                  <div><a href="https://vivekanandxyz.wordpress.com" onclick="this.target='_blank'">Blog</a></div>
-				</div>
-			  </div>
-		  </div>
-		</div>
-	</div>
-
-</div>
-
-<!-- Modal -->
-    <script src="static/js/particles.min.js"></script>
-    <script src="static/js/app.js"></script>
-    <script type="text/javascript"src="static/js/bootstrap.min.js"></script>
-    <script type="text/javascript"src="static/js/ser.js"></script>
-
+  <main>
+    <section>
+      <h1>Hi, I am Batman.</h1>
+    </section>
+    <section id="projects">
+      <dl>
+        <dt><a href="https://pagure.io/pagure">Pagure</a></dt>
+          <dd>A free and open source git collaboration tool in python, contributing since Dec 2015</dd>
+        <dt><a href="https://pagure.io/pagure-importer">Pagure-Importer</a></dt>
+          <dd>A cli tool for importing issues from github and trac to pagure</dd>
+        <dt><a href="https://github.com/Ethereal-Machines/Ray">Ray</a></dt>
+          <dd>Software that runs on Ethereal Ray 3D Printer</dd>
+        <dt><a href="https://github.com/Ethereal-Machines/RayOS">RayOS</a></dt>
+          <dd>A raspberrypi distro to open Ray s/w as kiosk application in chromium on boot </dd>
+        <dt><a href="https://github.com/apercis/apercis-coreserver">Opinator</a></dt>
+          <dd>A chrome extension to do sentiment analysis on reviews on e-commerce websites</dd>
+      </dl>
+    </section>
+  </main>
+  <footer>
+    <ul class="links">
+      <li><a href="https://vivekanandxyz.wordpress.com">Blog</a></li>
+      <li><a href="https://github.com/vivekanand1101">Github</a></li>
+      <li><a href="https://linkedin.com/in/vivekanand1101">Linkedin</a></li>
+      <li><a href="https://twitter.com/batmanfedora">Twitter</a></li>
+      <li><a href="https://facebook.com/fedora.batman">Facebook</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
